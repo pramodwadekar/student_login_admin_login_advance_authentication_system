@@ -1,0 +1,34 @@
+
+
+
+
+<center>
+    <h1>welcome user</h1>
+    <b>Fullname: </b>{{request.session.Fullname}}
+    <br><br>
+    <b>Email: </b>{{request.session.Email}}
+    <br><br>
+    <b>Age: </b>{{request.session.Age}}
+    <br><br>
+    <b>Gender: </b>{{request.session.Gender}}
+    <br><br>
+    <b>Country: </b>{{request.session.Country}}
+    <br><br>
+    <b>State: </b>{{request.session.State}}
+    <br><br>
+    <b>City: </b>{{request.session.City}}
+    <br><br>
+    <b>Qualification: </b>{{request.session.Qualification}}
+    <br><br>
+    <b>Subject: </b>{{request.session.Subject}}
+
+    <br><br>
+<form action="#" method = "post">
+    {% csrf_token %} 
+    <div>
+        <button type="submit" class="btn btn-primary" name="update">Update student</button>
+    </div>
+</form>
+
+
+</center>
